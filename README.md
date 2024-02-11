@@ -1,2 +1,2 @@
-# dtphotography
-Dimitar Tsvetkov Photography
+# ntphotography
+Nikol Tsvetkova Photography
