@@ -1,0 +1,26 @@
+$themes-colors: (
+  light: (
+    --text-color: #313131,
+    --text-color-gray: #313131,
+    --bg-color: #fff,
+    color: var(--text-color)
+    ),
+  dark: (
+    --text-color: #fff,
+    --text-color-gray: rgb(174, 174, 174),
+    --bg-color: #000,
+    color: var(--text-color)
+  )
+);
+
+@mixin outputColorsVars($colors) {
+  @each $var, $val in $colors {
+    #{$var}: #{$val};
+  }
+}
+
+@each $theme, $colors in $themes-colors {
+  [data-theme='#{$theme}'] {
+    @include outputColorsVars($colors);
+  }
+}

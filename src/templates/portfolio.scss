@@ -1,0 +1,102 @@
+.work__header {
+  text-align: center;
+  @media (min-width: $smedium + 1) {
+    margin: 2rem 0 5rem;
+  }
+  @media (max-width: $smedium) {
+    margin: 2rem 0;
+  }
+}
+
+.work__desc {
+  opacity: .6;
+  outline: none;
+  @media (min-width: $smedium + 1) {
+    padding-left: 5%;
+    padding-right: 5%;
+  }
+  @media (max-width: $smedium) {
+    &--off {
+      display: -webkit-box;
+      -webkit-box-orient: vertical;
+      overflow: hidden;
+      -webkit-line-clamp: var(--title-line-clamp, 3);
+      word-break: break-word;
+    }
+  }
+}
+
+// .gallery {
+//   display: grid;
+//   gap: .5rem;
+//   &__item {
+//     position: relative;
+//   }
+//   @media (min-width: $smedium + 1) {
+//     grid-template-columns: repeat(2, 1fr);
+//   }
+// }
+
+.gallery {
+  --space: 5px;
+  // margin: - calc(var(--space) / 2);
+  &__item {
+    position: relative;
+  }
+  > div {
+    gap: var(--space);
+    @media (min-width: $smedium + 1) {
+      display: flex;
+      flex-wrap: wrap;
+      .gallery__item {
+        outline: none;
+        width: var(--thumb-width);
+      }
+    }
+    @media (max-width: $smedium) {
+      display: grid;
+      grid-gap: var(--space);
+    }
+
+  }
+  &__link {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0; left: 0;
+    z-index: 2;
+    cursor: pointer;
+  }
+}
+
+.fullscreen .react-images__view-image {
+  height: auto;
+  max-height: 100vh;
+  max-width: 100%;
+  user-select: none;
+}
+
+.ril__caption,
+.ril__toolbar,
+.ril__navButtonNext,
+.ril__navButtonPrev {
+  background-color: transparent;
+}
+
+.ril__image {
+	transition: transform .5s cubic-bezier(0.42, 0.63, 0.13, 0.99);
+}
+
+
+.full-images {
+  background-color: rgba(0, 0, 0, 0.8);
+  inset: 0px;
+  position: fixed;
+  z-index: 1199;
+  &__img {
+    height: auto;
+    max-height: 100vh;
+    max-width: 100%;
+    user-select: none;
+  }
+}

@@ -1,1 +1,2 @@
-# nicol
+# dtphotography
+Dimitar Tsvetkov Photography

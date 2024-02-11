@@ -1,0 +1,76 @@
+{
+  "name": "nts-photo",
+  "private": true,
+  "description": "Tsvetkova Photography",
+  "version": "0.1.0",
+  "author": "Venelin Nikolov <venelinn@gmail.com>",
+  "dependencies": {
+    "@contentful/rich-text-types": "^16.3.0",
+    "contentful-export": "^7.19.120",
+    "contentful-import": "^9.4.37",
+    "dotenv": "^16.3.1",
+    "eslint-import-resolver-alias": "^1.1.2",
+    "gatsby": "^5.12.11",
+    "gatsby-awesome-pagination": "^0.3.8",
+    "gatsby-core-utils": "^4.12.1",
+    "gatsby-plugin-catch-links": "^5.12.0",
+    "gatsby-plugin-feed-generator": "^2.0.5",
+    "gatsby-plugin-google-analytics": "^5.12.0",
+    "gatsby-plugin-image": "^3.12.3",
+    "gatsby-plugin-manifest": "^5.12.3",
+    "gatsby-plugin-netlify": "^5.1.0",
+    "gatsby-plugin-offline": "^6.12.3",
+    "gatsby-plugin-preload-fonts": "^4.12.1",
+    "gatsby-plugin-react-helmet": "^6.12.0",
+    "gatsby-plugin-sass": "^6.12.3",
+    "gatsby-plugin-sharp": "^5.12.3",
+    "gatsby-source-contentful": "^8.12.4",
+    "gatsby-source-filesystem": "^5.12.1",
+    "gatsby-transformer-json": "^5.12.0",
+    "gatsby-transformer-sharp": "^5.12.3",
+    "lightgallery": "^2.7.2",
+    "lodash": "^4.17.21",
+    "prop-types": "^15.7.2",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-helmet": "^6.1.0",
+    "react-spring": "^9.1.2",
+    "sass": "^1.43.4",
+    "style-to-object": "^1.0.5"
+  },
+  "keywords": [
+    "gatsby"
+  ],
+  "license": "MIT",
+  "scripts": {
+    "build": "gatsby build",
+    "dev": "gatsby clean && gatsby develop",
+    "clean": "gatsby clean",
+    "start": "npm run develop",
+    "serve": "gatsby serve",
+    "test": "echo \"Write tests! -> https://gatsby.app/unit-testing\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/venelinn/nicol"
+  },
+  "bugs": {
+    "url": "https://github.com/venelinn/nicol/issues"
+  },
+  "browsersList": [
+    ">1%",
+    "last 2 versions"
+  ],
+  "devDependencies": {
+    "babel-eslint": "^10.1.0",
+    "eslint": "^8.2.0",
+    "eslint-config-airbnb": "^19.0.0",
+    "eslint-config-babel": "^9.0.0",
+    "eslint-config-prettier": "^9.0.0",
+    "eslint-plugin-import": "^2.25.3",
+    "eslint-plugin-react": "^7.27.2"
+  },
+  "engines": {
+    "node": "18.18.2"
+  }
+}

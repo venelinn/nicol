@@ -1,0 +1,39 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 3;
+  position: relative;
+  @media (min-width: $smedium + 1) {
+    min-height: var(--header-height);
+  }
+  @media (max-width: $smedium) {
+    min-height: var(--header-height-m);
+  }
+  > * {
+    display: flex;
+    flex-grow: 1;
+    flex-basis: 0;
+  }
+  &__center {
+    justify-content: center;
+  }
+  &__right {
+    justify-content: flex-end;
+  }
+}
+
+.logo {
+  svg {
+    width: var(--logo-width, 200px);
+    @media (min-width: $smedium + 1) {
+      --logo-width: 250px;
+    }
+  }
+  path {
+    fill: var(--text-color);
+  }
+  // .menu--on & {
+  //   z-index: 10;
+  // }
+}

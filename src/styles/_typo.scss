@@ -1,0 +1,17 @@
+@mixin h1 {
+  line-height: 1.071;
+  margin-top: 0;
+  margin-bottom: 0.6rem;
+  font-size: calc(16px + 6vw);
+}
+
+@mixin h2 {
+
+}
+
+@mixin h3 {
+  font-size: var(--heading3, 1.5rem);
+  @media (min-width: $smedium + 1) {
+    --heading3: 2rem;
+  }
+}

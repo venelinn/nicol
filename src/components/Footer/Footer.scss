@@ -1,0 +1,17 @@
+.footer {
+  text-align: center;
+  background-color: var(--bg-odd);
+  @media (min-width: $smedium + 1) {
+    padding: 2rem 0 1rem;
+  }
+  @media (max-width: $smedium) {
+    padding: 1rem 0;
+  }
+  &__copyright {
+    padding: 10px;
+    text-align: center;
+    font-size: 70%;
+    color: rgba(var(--color-white), 0.8);
+  }
+}
+
