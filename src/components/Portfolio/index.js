@@ -14,7 +14,7 @@ const query = graphql`
           slug
           date
           cover {
-            gatsbyImageData(layout: FULL_WIDTH, width: 500)
+            gatsbyImageData(layout: FULL_WIDTH, width: 400, height: 600, placeholder: BLURRED, formats: [AUTO, WEBP])
           }
         }
       }

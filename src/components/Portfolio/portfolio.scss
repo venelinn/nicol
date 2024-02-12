@@ -3,7 +3,7 @@
     display: grid;
     grid-gap: var(--portfolio-gap, 8px);
     @media (min-width: $smedium + 1) {
-      grid-template-columns: repeat(2, 1fr);
+      grid-template-columns: repeat(3, 1fr);
       justify-content: center;
       grid-auto-rows: 1fr;
     }
