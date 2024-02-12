@@ -25,9 +25,9 @@
 
 .logo {
   svg {
-    width: var(--logo-width, 200px);
+    width: var(--logo-width, 170px);
     @media (min-width: $smedium + 1) {
-      --logo-width: 250px;
+      --logo-width: 200px;
     }
   }
   path {

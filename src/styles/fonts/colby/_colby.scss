@@ -1,0 +1,118 @@
+@font-face {
+  font-family: "Jost";
+  font-style: normal;
+  font-weight: normal;
+  font-display: fallback;
+  src: local("Jost"),
+    url("./fonts/jost/Jost-400-Book.woff2") format("woff2"),
+    url("./fonts/jost/Jost-400-Book.ttf") format("ttf");
+}
+
+@font-face {
+  font-family: 'Colby';
+  src: local('Colby Medium Italic'), local('Colby-StMedIt'),
+      url('./fonts/colby/Colby-StMedIt.woff2') format('woff2'),
+      url('./fonts/colby/Colby-StMedIt.woff') format('woff');
+  font-weight: 500;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'Colby';
+  src: local('Colby Black'), local('Colby-StBlk'),
+      url('./fonts/colby/Colby-StBlk.woff2') format('woff2'),
+      url('./fonts/colby/Colby-StBlk.woff') format('woff');
+  font-weight: 900;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Colby';
+  src: local('Colby Light'), local('Colby-StLt'),
+      url('./fonts/colby/Colby-StLt.woff2') format('woff2'),
+      url('./fonts/colby/Colby-StLt.woff') format('woff');
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Colby';
+  src: local('Colby Bold'), local('Colby-StBld'),
+      url('./fonts/colby/Colby-StBld.woff2') format('woff2'),
+      url('./fonts/colby/Colby-StBld.woff') format('woff');
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Colby Extra';
+  src: local('Colby Extra Light'), local('Colby-StExtLt'),
+      url('./fonts/colby/Colby-StExtLt.woff2') format('woff2'),
+      url('./fonts/colby/Colby-StExtLt.woff') format('woff');
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Colby';
+  src: local('Colby Bold Italic'), local('Colby-StBldIt'),
+      url('./fonts/colby/Colby-StBldIt.woff2') format('woff2'),
+      url('./fonts/colby/Colby-StBldIt.woff') format('woff');
+  font-weight: bold;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'Colby';
+  src: local('Colby Medium'), local('Colby-StMed'),
+      url('./fonts/colby/Colby-StMed.woff2') format('woff2'),
+      url('./fonts/colby/Colby-StMed.woff') format('woff');
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Colby';
+  src: local('Colby Italic'), local('Colby-StRegIt'),
+      url('./fonts/colby/Colby-StRegIt.woff2') format('woff2'),
+      url('./fonts/colby/Colby-StRegIt.woff') format('woff');
+  font-weight: normal;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'Colby';
+  src: local('Colby'), local('Colby-StReg'),
+      url('./fonts/colby/Colby-StReg.woff2') format('woff2'),
+      url('./fonts/colby/Colby-StReg.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Colby Extra';
+  src: local('Colby Extra Light Italic'), local('Colby-StExtLtIt'),
+      url('./fonts/colby/Colby-StExtLtIt.woff2') format('woff2'),
+      url('./fonts/colby/Colby-StExtLtIt.woff') format('woff');
+  font-weight: 300;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'Colby';
+  src: local('Colby Black Italic'), local('Colby-StBlkIt'),
+      url('./fonts/colby/Colby-StBlkIt.woff2') format('woff2'),
+      url('./fonts/colby/Colby-StBlkIt.woff') format('woff');
+  font-weight: 900;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'Colby';
+  src: local('Colby Light Italic'), local('Colby-StLtIt'),
+      url('./fonts/colby/Colby-StLtIt.woff2') format('woff2'),
+      url('./fonts/colby/Colby-StLtIt.woff') format('woff');
+  font-weight: 300;
+  font-style: italic;
+}
+

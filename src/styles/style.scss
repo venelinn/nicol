@@ -1,6 +1,5 @@
 //@import 'fonts';
-@import "./fonts/jost/jost";
-@import "./fonts/BebasKai/bebaskai";
+@import "./fonts/colby/colby";
 @import 'animation';
 @import 'theme';
 
@@ -14,8 +13,8 @@
   --color-black: 0,0,0;
   --text-in: cubic-bezier(.31,.11,.12,.99);
   --primary-ease: var(--custom-ease-1);
-  --body-font: 'Jost', serif;
-  --header-font: 'BebasKai', serif;
+  --body-font: 'Colby', serif;
+  --header-font: var(--body-font);
   --page-max-width: 1200px;
   --header-height: 140px;
   --header-height-m: 80px;
