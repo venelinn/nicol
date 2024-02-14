@@ -7,7 +7,7 @@ import Portfolio from '../components/Portfolio';
 const IndexPage = () => {
   return (
     <>
-      <SEO title={'Dimitar Tsvetkov'} keywords={['photography']} />
+      <SEO title={'Tsvetkova'} keywords={['photography']} />
       <Section>
         <Portfolio />
       </Section>

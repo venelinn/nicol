@@ -6,7 +6,7 @@ import './Nav.scss';
 
 const query = graphql`
   query Navigation {
-    data: allContentfulPage(sort: {menu: DESC}) {
+    data: allContentfulPage(sort: {menu: DESC}, filter: { node_locale: { eq: "en-CA" } }) {
       edges {
         node {
           menu

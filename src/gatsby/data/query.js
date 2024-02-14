@@ -10,7 +10,7 @@ module.exports.data = {
     }
   }`,
   portfolios: `{
-    allContentfulPortfolio {
+    allContentfulPortfolio(filter: { node_locale: { eq: "en-CA" } }) {
       edges {
         node {
           id
@@ -20,7 +20,7 @@ module.exports.data = {
     }
   }`,
   posts: `{
-    allContentfulPost {
+    allContentfulPost(filter: { node_locale: { eq: "en-CA" } }) {
       edges {
         node {
           id

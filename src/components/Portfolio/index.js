@@ -7,7 +7,7 @@ import './portfolio.scss';
 
 const query = graphql`
   query Folio {
-    data: allContentfulPortfolio(sort: {date: DESC}) {
+    data: allContentfulPortfolio(sort: {date: DESC}, filter: { node_locale: { eq: "en-CA" } }) {
       edges {
         node {
           title

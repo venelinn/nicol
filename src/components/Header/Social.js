@@ -6,7 +6,7 @@ import './Social.scss';
 
 const query = graphql`
   query SocialMedia {
-    data: allContentfulSocial {
+    data: allContentfulSocial(filter: { node_locale: { eq: "en-CA" } }) {
       edges {
         node {
           name

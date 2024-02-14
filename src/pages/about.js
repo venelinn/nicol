@@ -41,11 +41,7 @@ AboutPage.propTypes = {
 
 export const pageQuery = graphql`
   query AboutPage {
-    about: allContentfulPage (
-      filter: {
-        slug: {eq: "about"}
-      }
-    )
+    about: allContentfulPage (filter: {slug: {eq: "about"}, node_locale: { eq: "en-CA" }} )
     {
       ...AboutPageFragment
     }

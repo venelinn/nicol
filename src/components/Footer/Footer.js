@@ -1,7 +1,6 @@
 import React from 'react';
 import { graphql, useStaticQuery } from 'gatsby';
 import Section from '../Section/Section';
-import Social from '../Header/Social';
 import './Footer.scss';
 
 const query = graphql`
@@ -20,7 +19,6 @@ const Footer = ({ theme }) => {
         <div className="footer__copyright">
           © {new Date().getFullYear()}, {footer.data.copy}
         </div>
-        <Social />
       </footer>
     </Section>
   );

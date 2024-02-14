@@ -3,8 +3,8 @@
   align-items: center;
   color: inherit;
   background-color: var(--bg-odd);
+  justify-content: center;
   @media (min-width: $smedium + 1) {
-    justify-content: space-between;
     padding: 2rem 0 1rem;
   }
   @media (max-width: $smedium) {

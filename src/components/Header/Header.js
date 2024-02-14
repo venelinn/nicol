@@ -2,6 +2,7 @@ import React, {useState, useEffect, useRef } from 'react';
 import { useData } from '../../utils/DataProvider'
 import { Link, graphql, useStaticQuery } from 'gatsby'
 import Section from '../Section/Section';
+import Social from './Social';
 import Nav from './Nav';
 import Logo from './Logo'
 
@@ -83,10 +84,7 @@ const Header = ({location}) => {
   return (
     <Section className="header">
       <header className={`header menu--${menuState.clicked ? 'on' : 'off'}`} ref={locRef}>
-        <div className="header__left logo">
-          <Link to="/"><Logo /><span className="sr-only">{site.siteMetadata.title}</span></Link>
-        </div>
-        <div className="header__right">
+        <div className="header__left">
           <div className={`menu--${menuState.clicked ? 'on' : 'off'}`}>
             <div className="top-nav__icon">
               <button
@@ -102,6 +100,12 @@ const Header = ({location}) => {
             </div>
             <Nav />
           </div>
+        </div>
+        <div className="header__center logo">
+          <Link to="/"><Logo /><span className="sr-only">{site.siteMetadata.title}</span></Link>
+        </div>
+        <div className="header__right">
+          <Social />
         </div>
       </header>
     </Section>
