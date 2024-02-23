@@ -10,12 +10,8 @@ import RichText from '../utils/RichText';
 
 const PostTemplate = ({ data, pageContext }) => {
   const {title, metaDescription, heroImage, publishDate, content } = data.contentfulPost;
-
   const { prev, next, basePath } = pageContext;
-
-
   const ogImage = heroImage?.gatsbyImageData?.images?.fallback?.src || null;
-
   return (
     <>
       <SEO
@@ -44,7 +40,7 @@ export const postQuery = graphql`
     contentfulPost(id: { eq: $id }) {
       title
       slug
-      metaDescription
+      # metaDescription
       publishDate(formatString: "MMMM DD, YYYY")
       heroImage {
         title
@@ -52,14 +48,14 @@ export const postQuery = graphql`
       }
       content {
         raw
-        references {
-          ... on ContentfulAsset {
-            # contentful_id is required to resolve the references
-            __typename
-            contentful_id
-            gatsbyImageData(layout: FULL_WIDTH, width: 600)
-          }
-        }
+        # references {
+        #   ... on ContentfulAsset {
+        #     # contentful_id is required to resolve the references
+        #     __typename
+        #     contentful_id
+        #     gatsbyImageData(layout: FULL_WIDTH, width: 600)
+        #   }
+        # }
       }
     }
   }

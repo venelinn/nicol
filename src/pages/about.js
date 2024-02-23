@@ -15,8 +15,6 @@ const AboutPage = props => {
         keywords={[ 'photography' ]}
       />
 
-      <Hero title={about.hero.title} image={about.hero} />
-
       <Section className="fixed">
         <div className="about">
           <div>
@@ -25,8 +23,9 @@ const AboutPage = props => {
               <p>{about.desc.description}</p>
             )}
           </div>
-          <Contacts />
+          <Hero title={about.hero.title} image={about.hero} />
         </div>
+        <Contacts />
       </Section>
     </>
   );

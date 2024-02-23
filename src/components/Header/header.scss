@@ -25,10 +25,11 @@
 
 .logo {
   svg {
-    width: var(--logo-width, 170px);
-    @media (min-width: $smedium + 1) {
-      --logo-width: 170px;
+    height: var(--logo-height, 60px);
+    @media (max-width: $smedium) {
+      --logo-height: 45px;
     }
+
   }
   path {
     fill: var(--text-color);

@@ -287,14 +287,14 @@ button {
   }
 }
 
-[data-theme="light"] {
-  #gatsby-focus-wrapper:has(.hero) {
-    .header,
-    .hero__content {
-      color: #fff;
-    }
-    .logo path {
-      fill: #fff;
-    }
-  }
-}
+// [data-theme="light"] {
+//   #gatsby-focus-wrapper:has(.hero) {
+//     .header,
+//     .hero__content {
+//       color: #fff;
+//     }
+//     .logo path {
+//       fill: #fff;
+//     }
+//   }
+// }

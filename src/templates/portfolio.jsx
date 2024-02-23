@@ -72,9 +72,9 @@ export const pageQuery = graphql`
     contentfulPortfolio(id: { eq: $id }) {
       id
       title
-      desc: childContentfulPortfolioDescriptionTextNode {
-        description
-      }
+      # desc: childContentfulPortfolioDescriptionTextNode {
+      #   description
+      # }
       ogimg: cover {
         id
         gatsbyImageData(layout: FULL_WIDTH, width: 900)

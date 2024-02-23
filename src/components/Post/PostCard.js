@@ -18,7 +18,7 @@ const Card = ({ slug, heroImage, title, publishDate, excerpt }) => {
             <h2 className='title title--h2 post__title'>
               <Link to={`/blog/${slug}`}>{title} </Link>
             </h2>
-            <PostDetails date={publishDate} />
+            {publishDate && <PostDetails date={publishDate} />}
           </div>
           <section>
             <p>{excerpt}</p>
