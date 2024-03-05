@@ -3,12 +3,12 @@ require('dotenv').config({ path: `./.env` });
 
 module.exports = {
   siteMetadata: {
-    title: `Tsvetkova • Photographer`,
-    description: `Tsvetkova • Photographer`,
+    title: `Nikol Tsvetkova • Photographer`,
+    description: `Nikol Tsvetkova • Photographer`,
     siteUrl: 'https://tsvetkovaphotography.com', // Site domain. Do not include a trailing slash! If you wish to use a path prefix you can read more about that here: https://www.gatsbyjs.org/docs/path-prefix/
-    author: 'Dimitar Tsvetkov', // Author for RSS author segment and SEO schema
+    author: 'Nikol Tsvetkova', // Author for RSS author segment and SEO schema
     authorJob: `Photographer`,
-    copyright: 'Tsvetkova Photography',
+    copyright: 'Nikol Tsvetkova Photography',
     userTwitter: '@tsvetkovaphotography', // Change for Twitter Cards
     shortTitle: 'NTP', // Used for App manifest e.g. Mobile Home Screen
     shareImage: '/images/share.jpg', // Open Graph Default Share Image. 1200x1200 is recommended
@@ -141,8 +141,8 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `Dimitar Tsvetkov Photography`,
-        short_name: `DTP`,
+        name: `Nikol Tsvetkova Photography`,
+        short_name: `NTP`,
         start_url: `/`,
         background_color: `#000000`,
         theme_color: `#000000`,

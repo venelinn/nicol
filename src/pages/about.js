@@ -1,6 +1,7 @@
 import React from 'react';
 import { graphql } from 'gatsby';
 import PropTypes from 'prop-types';
+import { GatsbyImage, getImage } from 'gatsby-plugin-image';
 import SEO from '../components/Seo';
 import Section from '../components/Section/Section';
 import Contacts from '../components/Contacts/Contacts';
@@ -8,6 +9,7 @@ import Hero from '../components/Hero/Hero';
 
 const AboutPage = props => {
   const about = props.data.about.edges[0].node;
+  const heroImage = getImage(about.hero);
   return (
     <>
       <SEO
@@ -23,7 +25,8 @@ const AboutPage = props => {
               <p>{about.desc.description}</p>
             )}
           </div>
-          <Hero title={about.hero.title} image={about.hero} />
+          {/* <Hero title={about.hero.title} image={about.hero} /> */}
+          <GatsbyImage image={heroImage} alt={about.hero.title} />
         </div>
         <Contacts />
       </Section>

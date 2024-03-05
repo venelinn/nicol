@@ -86,18 +86,6 @@ const Header = ({location}) => {
       <header className={`header menu--${menuState.clicked ? 'on' : 'off'}`} ref={locRef}>
         <div className="header__left">
           <div className={`menu--${menuState.clicked ? 'on' : 'off'}`}>
-            <div className="top-nav__icon">
-              <button
-                className="burger"
-                onClick={handleMenu}
-                aria-label="Menu"
-                aria-controls="navigation"
-                >
-                <span></span>
-                <span></span>
-                <span></span>
-              </button>
-            </div>
             <Nav />
           </div>
         </div>
@@ -105,6 +93,18 @@ const Header = ({location}) => {
           <Link to="/"><Logo /><span className="sr-only">{site.siteMetadata.title}</span></Link>
         </div>
         <div className="header__right">
+          <div className="top-nav__icon">
+            <button
+              className="burger"
+              onClick={handleMenu}
+              aria-label="Menu"
+              aria-controls="navigation"
+              >
+              <span></span>
+              <span></span>
+              <span></span>
+            </button>
+          </div>
           <Social />
         </div>
       </header>

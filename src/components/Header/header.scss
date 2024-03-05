@@ -10,11 +10,11 @@
   @media (max-width: $smedium) {
     min-height: var(--header-height-m);
   }
-  > * {
-    display: flex;
-    flex-grow: 1;
-    flex-basis: 0;
-  }
+  // > * {
+  //   display: flex;
+  //   flex-grow: 1;
+  //   flex-basis: 0;
+  // }
   &__center {
     justify-content: center;
   }
@@ -24,10 +24,14 @@
 }
 
 .logo {
+  flex: 1;
   svg {
-    height: var(--logo-height, 60px);
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
+    max-height: var(--logo-height, 60px);
     @media (max-width: $smedium) {
-      --logo-height: 45px;
+      // --logo-height: 45px;
     }
 
   }

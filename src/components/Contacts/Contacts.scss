@@ -1,10 +1,4 @@
 .section--contact {
-  h3 {
-    color: white;
-  }
-  .section-intro h5 {
-    color: var(--base-color);
-  }
   form {
     margin-top: 0;
     margin-bottom: 3rem;
@@ -13,26 +7,14 @@
 
 /* contact form */
 .contact-form {
-  @include placeholder {
-    color: rgba(255, 255, 255, 0.3);
+  @media (min-width: $medium + 1) {
+    width: 100%;
+    margin: auto;
+    max-width: 50%;
   }
   fieldset {
     border: none;
   }
-}
-
-input:-webkit-autofill,
-input:-webkit-autofill:hover,
-input:-webkit-autofill:focus,
-textarea:-webkit-autofill,
-textarea:-webkit-autofill:hover,
-textarea:-webkit-autofill:focus,
-select:-webkit-autofill,
-select:-webkit-autofill:hover,
-select:-webkit-autofill:focus {
-  -webkit-text-fill-color: rgba(255, 255, 255, 0.7);
-  box-shadow: 0 0 0px 1000px #151515 inset;
-  transition: background-color 5000s ease-in-out 0s;
 }
 
 input::-ms-clear {
@@ -50,13 +32,12 @@ input::-ms-clear {
     border-bottom: 1px solid currentColor;
     transition: all 0.3s ease-in-out;
     width: 100%;
-    color: rgba(255, 255, 255, 0.7);
+    color: rgba(0, 0, 0, 0.7);
     margin-bottom: 0;
-    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
     padding: 1.5rem 1rem;
     &:focus {
       border-color: var(--base-color);
-      color: #fff;
     }
     &.error {
       border-bottom-color: var(--base-color);

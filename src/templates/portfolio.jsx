@@ -85,7 +85,7 @@ export const pageQuery = graphql`
       }
       large: images {
         id
-        gatsbyImageData(layout: CONSTRAINED, width: 1800, quality: 100)
+        gatsbyImageData(layout: CONSTRAINED, width: 1500, quality: 80)
       }
     }
   }
