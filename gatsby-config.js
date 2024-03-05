@@ -12,8 +12,8 @@ module.exports = {
     userTwitter: '@tsvetkovaphotography', // Change for Twitter Cards
     shortTitle: 'NTP', // Used for App manifest e.g. Mobile Home Screen
     shareImage: '/images/share.jpg', // Open Graph Default Share Image. 1200x1200 is recommended
-    shareImageWidth: 900, // Change to the width of your default share image
-    shareImageHeight: 600, // Change to the height of your default share image
+    shareImageWidth: 1200, // Change to the width of your default share image
+    shareImageHeight: 630, // Change to the height of your default share image
     siteLogo: `/images/favicons/android-chrome-512x512.png`, // Logo used for SEO, RSS, and App manifest
     blogPath: '/blog/',
     postsPerFirstPage: 7,
@@ -149,7 +149,7 @@ module.exports = {
         description: `Photographer`,
         display: `minimal-ui`,
         lang: `en-US`,
-        icon: `${__dirname}/src/images/dtp-icon.png` // This path is relative to the root of the site.
+        icon: `${__dirname}/src/images/ntp-icon.png` // This path is relative to the root of the site.
       }
     },
     // {
