@@ -3,6 +3,7 @@
   justify-content: space-between;
   align-items: center;
   z-index: 3;
+  gap: 1rem;
   position: relative;
   @media (min-width: $smedium + 1) {
     min-height: var(--header-height);

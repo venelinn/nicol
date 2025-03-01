@@ -2,11 +2,15 @@
   &__grid {
     display: grid;
     gap: var(--_portfolio-gap, .5rem);
-    grid-template-columns: var(--_portfolio-grid, repeat(2, 1fr));
+    grid-template-columns: var(--_portfolio-grid, 1fr);
     justify-content: center;
     grid-auto-rows: 1fr;
-    @media (min-width: $smedium + 1) {
+    @media (min-width: $medium + 1) {
       --_portfolio-grid: repeat(3, 1fr);
+      --_portfolio-gap: 1rem;
+    }
+    @media (min-width: $small + 1) and (max-width: $medium) {
+      --_portfolio-grid: repeat(2, 1fr);
       --_portfolio-gap: 1rem;
     }
   }

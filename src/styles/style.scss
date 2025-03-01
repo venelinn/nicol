@@ -1,5 +1,5 @@
 //@import 'fonts';
-@import "./fonts/colby/colby";
+// @import "./fonts/colby/colby";
 @import 'animation';
 @import 'theme';
 
@@ -13,11 +13,14 @@
   --color-black: 0,0,0;
   --text-in: cubic-bezier(.31,.11,.12,.99);
   --primary-ease: var(--custom-ease-1);
-  --body-font: 'Colby', serif;
+  --body-font: 'Lato', serif;
   --header-font: var(--body-font);
   --page-max-width: 1200px;
   --header-height: 140px;
   --header-height-m: 80px;
+  --font-weight-bold: 700;
+  --font-weight-normal: 400;
+  --font-weight-light: 300;
 }
 
 body {

@@ -28,7 +28,7 @@ const PortfolioTemplate = ({ data}) => {
   return (
     <>
       <SEO
-        title={'Dimitar Tsvetkov'}
+        title={'Nikol Tsvetkova Photography'}
         keywords={[
           `photography`
         ]}

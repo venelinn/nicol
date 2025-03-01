@@ -1,6 +1,7 @@
 .nav-menu {
   text-transform: uppercase;
   font-size: 80%;
+  font-weight: var(--font-weight-bold);
   .link {
     &:not(.link--active) {
       opacity: .6;

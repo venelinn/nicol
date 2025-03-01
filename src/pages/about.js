@@ -6,6 +6,7 @@ import SEO from '../components/Seo';
 import Section from '../components/Section/Section';
 import Contacts from '../components/Contacts/Contacts';
 import Hero from '../components/Hero/Hero';
+import Markdown from "markdown-to-jsx";
 
 const AboutPage = props => {
   const about = props.data.about.edges[0].node;
@@ -13,7 +14,7 @@ const AboutPage = props => {
   return (
     <>
       <SEO
-        title='Dimitar Tsvetkov'
+        title='Nikol Tsvetkova'
         keywords={[ 'photography' ]}
       />
 
@@ -22,7 +23,7 @@ const AboutPage = props => {
           <div>
             <h2>{about.title}</h2>
             {about.desc.description && (
-              <p>{about.desc.description}</p>
+              <Markdown>{about.desc.description}</Markdown>
             )}
           </div>
           {/* <Hero title={about.hero.title} image={about.hero} /> */}

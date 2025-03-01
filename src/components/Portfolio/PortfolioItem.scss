@@ -28,8 +28,8 @@
         background-color: rgba(var(--color-white), 0.97);
       }
       .folio__item__cell {
-        opacity: 1;
-        margin-top: 0;
+        --_cell-opacity: 1;
+        --_cell-margin: 0;
       }
     }
   }
@@ -39,6 +39,11 @@
         rgba(0, 0, 0, 0.1) 50%,
         rgba(0, 0, 0, 0.9) 100%
       );
+    }
+    .folio__item__cell {
+      --_cell-opacity: 1;
+      color: #fff;
+      font-size: 1.5em;
     }
   }
   &__item {
@@ -60,10 +65,10 @@
       padding-bottom: 1rem;
     }
     &__cell {
-      opacity: 0;
+      opacity: var(--_cell-opacity, 0);
       transition: opacity 0.5s ease-in, margin 0.3s ease-in;
       transition-delay: .2s;
-      margin-top: 1rem;
+      margin-top: var(--_cell-margin, 1rem);
     }
     &__date {
       opacity: .5;
